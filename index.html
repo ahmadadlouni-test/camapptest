@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  		<!-- camera viewer container -->
+      <div class="camera-viewer-container">
+        <video id="camera-view" autoplay="autoplay"
+          playsinline="playsinline"></video>
+      </div>
+  
+      <!-- Camera trigger -->
+      <div class="camera-trigger-container">
+        <b:Paragraph id="cardSideText"></b:Paragraph>
+        <div class="inner-camera-trigger-container">
+          <div class="card-icon driver-license" id="driverLicenseIcon">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <div class="card-icon insurance-card" id="insuranceCardIcon">
+            <i class="fas fa-first-aid"></i>
+          </div>
+          <button id="shutterButton">
+            Capture <i class="fas fa-camera"></i>
+          </button>
+          <button id="openCamera" text="Skip">Open Camera</button>
+        </div>
+      </div>
+
+      <div id="logger"></div>
+
+  <script async src="opencv.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
