@@ -304,7 +304,7 @@ function takeSnapshot() {
     console.log(t, cv.meanStdDev(dst, menO, men), menO.data64F[0], men.data64F[0]);
     
     if (men.data64F[0] > 10)
-      console.log('Not blur')
+      alert('NOT BLURRED');
     else
       alert('Image is BLURRED');
     
